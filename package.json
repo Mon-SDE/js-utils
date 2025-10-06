@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "It's a simple JavaScript / TypeScript utility library for learning and practice purpose",
   "keywords": [
-    "javascript",
+    "utils",
     "typescript",
-    "util",
-    "library",
-    "js",
-    "ts"
+    "string",
+    "math"
   ],
+  "license": "MIT",
+  "author": "Angkur Mondal",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
   "homepage": "https://github.com/iAngkur/js-utils#readme",
   "bugs": {
     "url": "https://github.com/iAngkur/js-utils/issues"
@@ -18,16 +27,11 @@
     "type": "git",
     "url": "git+https://github.com/iAngkur/js-utils.git"
   },
-  "license": "MIT",
-  "author": "Angkur Mondal",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "devDependencies": {
     "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
     "ts-jest": "^29.4.4",
-    "typescript": "^5.9.3"
+    "ts-node": "^10.9.2",
+    "typescript": "5.9.3"
   }
 }
