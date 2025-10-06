@@ -1,0 +1,33 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "It's a simple JavaScript / TypeScript utility library for learning and practice purpose",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "util",
+    "library",
+    "js",
+    "ts"
+  ],
+  "homepage": "https://github.com/iAngkur/js-utils#readme",
+  "bugs": {
+    "url": "https://github.com/iAngkur/js-utils/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAngkur/js-utils.git"
+  },
+  "license": "MIT",
+  "author": "Angkur Mondal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "ts-jest": "^29.4.4",
+    "typescript": "^5.9.3"
+  }
+}

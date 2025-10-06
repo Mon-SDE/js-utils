@@ -1,0 +1,23 @@
+# Node.js dependencies
+node_modules/
+*.log
+
+# TypeScript build artifacts
+dist/
+build/
+*.js
+*.js.map
+*.d.ts
+
+# Editor and OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+coverage/
+
+# Environment variables
+.env
+.env.local
