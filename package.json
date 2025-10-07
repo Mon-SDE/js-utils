@@ -1,7 +1,7 @@
 {
-  "name": "js-utils",
+  "name": "@mon/js-utils",
   "version": "1.0.0",
-  "description": "It's a simple JavaScript / TypeScript utility library for learning and practice purpose",
+  "description": "a simple JavaScript / TypeScript utility library for learning and practice purpose",
   "keywords": [
     "utils",
     "typescript",
@@ -11,13 +11,25 @@
   "license": "MIT",
   "author": "Angkur Mondal",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "build": "tsup",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"    
   },
   "homepage": "https://github.com/iAngkur/js-utils#readme",
   "bugs": {
@@ -28,10 +40,12 @@
     "url": "git+https://github.com/iAngkur/js-utils.git"
   },
   "devDependencies": {
-    "@types/jest": "^30.0.0",
-    "jest": "^30.2.0",
-    "ts-jest": "^29.4.4",
-    "ts-node": "^10.9.2",
-    "typescript": "5.9.3"
+    "@types/node": "^24.7.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
   }
 }

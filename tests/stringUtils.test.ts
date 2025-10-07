@@ -1,11 +1,16 @@
-import {capitalize, toTitleCase} from "../src/stringUtils";
+import { describe, expect, it } from "vitest";
+import {capitalize, toTitleCase} from "../src/string-utils/stringUtils";
 
-test("capitalize() should capitalize first letter", () => {
-    expect(capitalize("hello")).toBe("Hello");
-    expect(capitalize("WORLD")).toBe("World");
-    expect(capitalize("")).toBe("");
+describe("capitalize", () => {
+    it("should capitalize first letter", () => {
+        expect(capitalize("hello")).toBe("Hello");
+        expect(capitalize("WORLD")).toBe("World");
+        expect(capitalize("")).toBe("");
+    });
 });
 
-test("toTitleCase() should capitalize first letter", () => {
-    expect(toTitleCase("hello world")).toBe("Hello World");
+describe("toTitleCase", () => {
+    it("should capitalize first letter of each word", () => {
+        expect(toTitleCase("hello world")).toBe("Hello World");
+    })
 });

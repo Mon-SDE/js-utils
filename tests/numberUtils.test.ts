@@ -1,11 +1,16 @@
-import { isEven, sum } from "../src/numberUtils";
+import {describe, expect, it} from 'vitest';
+import { isEven, sum } from "../src/number-utils/numberUtils";
 
-test("isEven() should work correctly", () => {
-  expect(isEven(2)).toBe(true);
-  expect(isEven(3)).toBe(false);
+describe("isEven", () => {
+  it("should work correctly", () => {
+    expect(isEven(2)).toBe(true);
+    expect(isEven(3)).toBe(false);
+  })
 });
 
-test("sum() should calculate total", () => {
-  expect(sum([1, 2, 3])).toBe(6);
-  expect(sum([])).toBe(0);
+describe("sum", () => {
+  it("should calculate total", () => {
+    expect(sum([1, 2, 3])).toBe(6);
+    expect(sum([])).toBe(0);
+  })
 });

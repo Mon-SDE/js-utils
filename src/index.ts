@@ -1,2 +1,2 @@
-export * from "./stringUtils.js";
-export * from "./numberUtils.js";
+export * from "./string-utils/stringUtils.js";
+export * from "./number-utils/numberUtils.js";
