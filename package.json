@@ -1,6 +1,6 @@
 {
   "name": "@kittenlib/js-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple JavaScript / TypeScript utility library for learning and practice purpose",
   "keywords": [
     "utils",
