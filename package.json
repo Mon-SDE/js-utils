@@ -3,8 +3,9 @@
   "version": "1.0.3",
   "description": "a simple JavaScript / TypeScript utility library for learning and practice purpose",
   "keywords": [
-    "utils",
+    "javascript",
     "typescript",
+    "utils",
     "string",
     "math"
   ],
