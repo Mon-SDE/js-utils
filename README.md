@@ -68,3 +68,5 @@ const total = sum([1, 2, 3]); // number
 // capitalize(123); // Argument of type 'number' not assignable to parameter of type 'string'
 ```
 
+## Author 
+Angkur Mondal
