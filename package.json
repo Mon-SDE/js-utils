@@ -1,5 +1,5 @@
 {
-  "name": "@mon/js-utils",
+  "name": "@kittenlib/js-utils",
   "version": "1.0.0",
   "description": "a simple JavaScript / TypeScript utility library for learning and practice purpose",
   "keywords": [
@@ -31,13 +31,13 @@
     "clean": "rm -rf dist",
     "prepare": "npm run build"    
   },
-  "homepage": "https://github.com/iAngkur/js-utils#readme",
+  "homepage": "https://github.com/Mon-SDE/js-utils#readme",
   "bugs": {
-    "url": "https://github.com/iAngkur/js-utils/issues"
+    "url": "https://github.com/Mon-SDE/js-utils/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iAngkur/js-utils.git"
+    "url": "git+https://github.com/Mon-SDE/js-utils.git"
   },
   "devDependencies": {
     "@types/node": "^24.7.0",
