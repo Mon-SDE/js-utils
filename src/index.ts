@@ -1,2 +1,3 @@
-export * from "./string-utils/stringUtils.js";
-export * from "./number-utils/numberUtils.js";
+export * from "./string-utils/stringUtils.ts";
+export * from "./number-utils/numberUtils.ts";
+export * from "./array-utils/arrayUtils.ts";

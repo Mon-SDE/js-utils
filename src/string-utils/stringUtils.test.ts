@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {capitalize, removeExtraSpace, toTitleCase, truncate} from "../index.js";
+import {capitalize, removeExtraSpace, toTitleCase, truncate} from "./stringUtils";
 
 describe("string-utils", () => {
     it("should capitalize first letter", () => {

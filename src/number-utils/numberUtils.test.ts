@@ -1,13 +1,11 @@
 import { describe, expect, it } from "vitest";
 import {
-  average,
   clamp,
   formatMoney,
   isEven,
   isOdd,
   parseMoney,
   randomInt,
-  sum,
 } from "./numberUtils";
 
 describe("number-utils", () => {
@@ -19,19 +17,9 @@ describe("number-utils", () => {
     expect(isOdd(4)).toBe(false);
   });
 
-  it("should calculate total", () => {
-    expect(sum([1, 2, 3])).toBe(6);
-    expect(sum([])).toBe(0);
-  });
-
   it("should clamp values correctly", () => {
     expect(clamp(10, 0, 5)).toBe(5);
     expect(clamp(-5, 0, 5)).toBe(0);
-  });
-
-  it("should compute average and median", () => {
-    expect(average([1, 2, 3])).toBe(2);
-    expect(average([1, 2, 3, 4])).toBe(2.5);
   });
 
   it("should generates a random integer in range", () => {
