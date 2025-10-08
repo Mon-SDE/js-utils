@@ -1,12 +1,45 @@
+/**
+ * Checks if a number is even or not
+ * 
+ * @param num - number input to be checked
+ * @returns True if it's even, False otherwise
+ * 
+ * @example
+ * 
+ * isEven(2) => true
+ * isEven(3) => false
+ */
 export function isEven(num: number): boolean {
+    if (typeof num !== 'number') {
+        throw new TypeError("Invalud input type. Only 'number' is allowed.");
+    }
     return num%2 == 0;
 }
 
+/**
+ * Checks if a number is odd or not
+ * 
+ * @param num - number input to be checked
+ * @returns True if it's odd, False otherwise
+ * 
+ * @example
+ * 
+ * isEven(2) => false
+ * isEven(3) => true
+ */
 export function isOdd(num: number): boolean {
+    if (typeof num !== 'number') {
+        throw new TypeError("Invalud input type. Only 'number' is allowed.");
+    }
+
     return !isEven(num);
 }
 
 export function sum(numbers: number[]): number {
+    if (!Array.isArray(numbers)) {
+        throw new TypeError("Invalid input type. Only an array of numbers is allowed.");
+    }
+
     return numbers.reduce((acc, curr) => acc + curr, 0);
 }
 
